@@ -2,29 +2,31 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import classes from "../styles/introduction.module.css";
-
+import introStyle from "../styles/introduction.module.css";
+import darkStyle from "../styles/dark.module.css";
+import { Fragment } from "react";
 export default function Home() {
   return (
-    <div className="Layout">
-      <div className="innerLayout">
-        <div>
-          <h1 className={classes.headline}>Hello, I&apos;m Bryan,</h1>
-          <h2 className={classes.desc}>
-            I make website and want to become a Full-Stack Web Developer
-          </h2>
-          <div className={classes.nav}>
-            <Link href="#footer" className={classes.btn}>
-              Contact
-            </Link>
-            <Link href="#latest-projects">
-              <label className={classes.scroll}>
-                or scroll down for more{" "}
-                <i className="fa-solid fa-arrow-down"></i>
-              </label>
-            </Link>
-          </div>
+    <Fragment>
+      <div className={introStyle.layout}>
+        <h1 className={introStyle.headline}>Hello, I&apos;m Bryan,</h1>
+        <h2 className={introStyle.desc}>
+          I make website and want to become a Full-Stack Web Developer
+        </h2>
+        <div className={introStyle.nav}>
+          <Link href="#footer" className={introStyle.btn}>
+            Contact
+          </Link>
+          <Link href="#latest-projects">
+            <label className={introStyle.scroll}>
+              or scroll down for more <i className="fa-solid fa-arrow-down"></i>
+            </label>
+          </Link>
         </div>
+      </div>
+
+      <div className={darkStyle.dark}>
+        <h1>Latest Projects</h1>
       </div>
 
       {/* <div className={styles.container}>
@@ -92,6 +94,6 @@ export default function Home() {
           </a>
         </footer>
       </div> */}
-    </div>
+    </Fragment>
   );
 }
