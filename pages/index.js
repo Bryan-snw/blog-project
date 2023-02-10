@@ -1,14 +1,15 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import introStyle from "../styles/introduction.module.css";
-import darkStyle from "../styles/dark.module.css";
 import { Fragment } from "react";
-export default function Home() {
+import { useState } from "react";
+import DarkSection from "../component/home/darkSection";
+
+export default function Home(props) {
   return (
     <Fragment>
-      <div className={introStyle.layout}>
+      <div className={`layout ${introStyle.introduction}`}>
         <h1 className={introStyle.headline}>Hello, I&apos;m Bryan,</h1>
         <h2 className={introStyle.desc}>
           I make website and want to become a Full-Stack Web Developer
@@ -25,9 +26,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={darkStyle.dark}>
+      <DarkSection />
+
+      {/* <div className={`layout ${darkStyle.dark}`}>
         <h1>Latest Projects</h1>
-      </div>
+        <div id="latest-projects" className>
+          <h2 className={darkStyle.titlePost}>Title</h2>
+        </div>
+      </div> */}
 
       {/* <div className={styles.container}>
         <Head>
