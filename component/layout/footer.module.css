@@ -1,0 +1,21 @@
+.footer ul {
+  padding: 0;
+  text-align: center;
+}
+
+.icon {
+  font-size: 24px;
+  list-style: none;
+  display: inline-block;
+  margin: 1% 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  .copyright {
+    font-size: 24px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+}
