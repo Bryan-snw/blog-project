@@ -11,6 +11,10 @@
   color: white;
 }
 
+.icon {
+  cursor: pointer;
+}
+
 .header h3 {
   margin: 0;
 }

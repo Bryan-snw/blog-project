@@ -31,13 +31,9 @@ function TopNavbar() {
         </Link>
       </div>
       <div className={classes.iconMenu}>
-        <Link
-          href="javascript:"
-          className={classes.icon}
-          onClick={clickHandler}
-        >
+        <span className={classes.icon} onClick={clickHandler}>
           <i className="fa-solid fa-bars"></i>
-        </Link>
+        </span>
       </div>
     </header>
   );
