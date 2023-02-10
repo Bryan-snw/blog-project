@@ -18,6 +18,7 @@
 .iconMenu {
   display: flex;
   margin-left: auto;
+  font-size: 20px;
 }
 
 .listMenu {
@@ -32,7 +33,7 @@
   display: block;
   width: 100%;
   height: auto;
-  padding: 2.5% 5%;
+  padding: 3.5% 5%;
 }
 .listMenu a:hover {
   background-color: #fefcf3;
